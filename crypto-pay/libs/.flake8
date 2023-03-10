@@ -1,0 +1,9 @@
+[flake8]
+filename =
+    *.py
+extend-exclude =
+    .venv
+max-line-length = 120
+ignore =
+    F811
+    W503

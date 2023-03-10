@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "crypto-pay"
+version = "0.1.0"
+description = "Test automation for Crypto Pay"
+authors = ["ben.he <ben.he@crypto.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.6"
+pytest-bdd = "^4.0.2"
+python-dotenv = "^0.15.0"
+PyHamcrest = "^2.0.2"
+PyYAML = "^5.3.1"
+cdc-qa-core = {path = "./libs/cdc-qa-core", develop = true}
+cdc-qa-helpers = {path = "./libs/cdc-qa-helpers", develop = true}
+cdc-qa-integrations = {path = "./libs/cdc-qa-integrations", develop = true}
+cdc-qa-pageobject = {path = "./libs/cdc-qa-pageobject", develop = true}
+cdc-qa-apis = {path = "./libs/cdc-qa-apis", develop = true}
+pytest-parallel = "^0.1.0"
+pycryptodome = "^3.10.1"
+pandas = "1.4.1"
+PyMuPDF = "1.19.5"
+IMAPClient = "^2.2.0"
+pytest-random-order = "^1.0.4"
+web3 = "^5.22.0"
+numpy = "1.23.1"
+bit = "^0.8.0"
+PyNaCl = "^1.5.0"
+pyperclip = "^1.8.2"
+PyJWT = "2.4.0"
+slack-sdk = "3.18.3"
+beautifulsoup4 = "4.11.1"
+pyOpenSSL = "^22.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "22.3.0"
+flake8 = "^3.8.4"
+ipykernel = "^5.3.4"
+regex = "^2022.3.15"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+extend-exclude = '''
+/libs
+'''

@@ -1,0 +1,22 @@
+profile_1:
+    name: "Auto QA"
+    dob: "1999-12-31"
+    document_type: "ID_CARD"
+    phone_number: "+905341111111"
+    payment_currency: "TRY"
+    country_alpha_2: "TR"
+    country_alpha_3: "TUR"
+    entity_id: "turkey"
+
+#    zip_code: "12345"
+#    town: "CEYHAN"
+#    city: "ADANA"
+#    address: "test"
+#    neighborhood: "ADAPINAR MAH"
+#
+#    nationality: "Turkish"
+#    place_of_birth: "ADANA"
+#    father_name: "test"
+#    mother_name: "test1"
+#    occupation: "clergy"
+#    purpose_of_account: "trading"

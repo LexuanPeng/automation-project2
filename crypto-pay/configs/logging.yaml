@@ -1,0 +1,32 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  Brief:
+    format: "[%(levelname)s]-[%(asctime)s]-[%(threadName)s]: %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+handlers:
+  Console:
+    class: "logging.StreamHandler"
+    level: "DEBUG"
+    formatter: "Brief"
+    stream: "ext://sys.stdout"
+  File:
+    class: "logging.FileHandler"
+    level: "DEBUG"
+    formatter: "Brief"
+    filename: "crypto-pay.log"
+    mode: "w"
+
+loggers:
+  "":
+    level: "NOTSET"
+    handlers: ["Console", "File"]
+  "parse":
+    level: "ERROR"
+  "urllib3":
+    level: "ERROR"
+  "selenium":
+    level: "ERROR"
+  "paramiko":
+    level: "ERROR"

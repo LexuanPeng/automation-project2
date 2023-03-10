@@ -1,0 +1,7 @@
+# Staging
+api_staging: "https://pay.3ona.co"
+merchant_staging: "https://merchant.3ona.co"
+ops_staging: "https://pay-ops.3ona.co"
+# Staging1
+api_staging1: "https://asta-qa-pay.3ona.co"
+merchant_staging1: "https://asta-qa-merchant.3ona.co"

@@ -1,0 +1,223 @@
+main_title:
+  - xpath: //*[@class='ant-card-head-title']//div[.='<main_title>']
+  - xpath: //*[@class='ant-card-head-title' and contains(text(),'<main_title>')]
+  - xpath: //div[@class='ant-card-head-title']//span[contains(text(),'<main_title>')]
+user_link:
+  css selector: .user-link
+
+menu_shop:
+  - css selector: .ant-dropdown-trigger
+current_shop_name:
+  xpath: //*[@class="ant-menu-item-group-list"]/li[contains(@class,'ant-menu-item-selected')]/span/a
+user_item:
+  xpath: //*[@title='Switch Account']/following-sibling::*[1]//a[.="<shop_name>"]
+logout_link:
+  - xpath: //li[contains(@data-menu-id, 'signOut')]
+
+side_menu_item:
+  xpath: //a[contains(@href,'<menu_text>')]
+
+sub_header_tab:
+  xpath: //div[.='<tab_name>' and @role='tab']
+
+input_password_layout:
+  xpath: //p[.='Please enter your password to continue']
+
+password_field:
+  xpath: (//input[@type='password'])[1]
+
+password_confirm_btn:
+  xpath: (//p[.='Please enter your password to continue']/../../../..//button)[2]
+
+filter_btn:
+  css selector: button.filter-button
+
+filter_clear_btn:
+  - css selector: button.cancel-button
+  - css selector: button#cancel-button
+filter_apply_btn:
+  - css selector: button.apply-button
+  - css selector: button#apply-button
+
+filter_item_text:
+  xpath: //*[@class='filter-item']//span[.='<item_text>']
+filter_item_box:
+  xpath: //*[@class='filter-item']//span[.='<item_text>']/preceding-sibling::*[1]//input
+filter_item_selection:
+  xpath: //*[@class='filter-item']//span[.='<item_text>']/../../following-sibling::*[1]/div[1]
+filter_item_option:
+  - css selector: .rc-virtual-list-holder-inner div[title='<option_text>']
+  - xpath: //li[@role='option' and contains(text(),'<option_text>')]
+filter_item_input_field1:
+  xpath: (//*[@class='filter-item']//span[.='<item_text>']/../../following-sibling::*[1]//input)[2]
+filter_item_input_field2:
+  xpath: (//*[@class='filter-item']//span[.='<item_text>']/../../following-sibling::*[1]//input)[3]
+filter_date_input_filed1:
+  xpath: (//*[@class='filter-item']//span[.='Date']/../../following-sibling::*[1]//input)[1]
+filter_date_input_filed2:
+  xpath: (//*[@class='filter-item']//span[.='Date']/../../following-sibling::*[1]//input)[2]
+calendar_left_year:
+  - xpath: (//button[@class='ant-picker-year-btn'])[1]
+  - css selector: .ant-calendar-range-left .ant-calendar-year-select
+calendar_right_year:
+  - xpath: (//button[@class='ant-picker-year-btn'])[2]
+
+calendar_left_month:
+  - xpath: (//button[@class='ant-picker-month-btn'])[1]
+  - css selector: .ant-calendar-range-left .ant-calendar-month-select
+calendar_right_month:
+  - xpath: (//button[@class='ant-picker-month-btn'])[2]
+
+calendar_pre_month_btn:
+  - xpath: (//button[@class='ant-picker-header-prev-btn'])[1]
+  - css selector: .ant-calendar-range-left .ant-calendar-prev-month-btn
+calendar_next_month_btn:
+  - xpath: (//button[@class='ant-picker-header-next-btn'])[2]
+calendar_today:
+  css selector: .ant-calendar-today
+calendar_pre_left_first:
+  - xpath: ((//div[@class='ant-picker-panel'])[1]//td[@class='ant-picker-cell ant-picker-cell-start ant-picker-cell-in-view'])[1]
+  - xpath: (//*[@class='ant-calendar-range-part ant-calendar-range-left']//td)[1]
+calendar_future_right_first:
+  - xpath: ((//div[@class='ant-picker-panel'])[2]//td[@class='ant-picker-cell ant-picker-cell-end ant-picker-cell-in-view'])[1]
+  - xpath: (//*[@class='ant-calendar-range-part ant-calendar-range-right']//td)[1]
+
+back_btn:
+  css selector: .back-btn
+error_alert_msg:
+  css selector: .ant-notification-topRight .ant-notification-notice-description
+
+switch_test_data_tab:
+  xpath: //button[@role='switch' and @aria-checked='false']
+switch_test_data_tab_off:
+  xpath: //button[@role='switch' and @aria-checked='true']
+test_data_bar:
+  css selector: .main-container-body .ant-col
+test_data_bar_form:
+  xpath: //div[@class='ant-modal-body']//div[@class='ant-col ant-col-24' and contains(text(),'Test Data')]
+
+filter_input:
+  - css selector: .search-input input
+  - css selector: .filter-search input
+filter_input_clear:
+  css selector: span.ant-input-suffix
+first_row:
+  - css selector: .ant-table-tbody tr:nth-child(2) td:nth-child(1)
+  - css selector: .ant-table-tbody tr:nth-child(1) td:nth-child(1)
+tos_btn:
+  xpath: //button[.='I Agree the Terms.']
+
+code2fa_field:
+  css selector: "#codeOf2fa"
+error_2fa:
+  - xpath: //div[.='Wrong password or 2FA code. You cannot perform this action.']
+  - xpath: //p[.='Invalid verification code. Please make sure you have entered the correct 2FA code.']
+
+t_c_title:
+  - xpath: //div[text()='Updated Terms & Conditions']
+agree_terms_btn:
+  xpath: //button[.='I Agree to the Terms & Conditions']
+
+alert_message:
+  - css selector: .ant-alert-message
+  - css selector: span.ant-alert-message
+support_tab:
+  xpath: //li[@role='menuitem']//span[contains(text(),'Support')]
+
+table_column_title:
+  - xpath: //th[.='<column_name>']
+  - xpath: //span[@class='ant-table-column-title' and contains(text(),"<column_name>")]
+
+create_business_field:
+  xpath: (//div[contains(text(),'Your Business Profile')]/../../..//input)[1]
+create_business_website_field:
+  xpath: (//div[contains(text(),'Your Business Profile')]/../../..//input)[2]
+default_balances_currency_selection:
+  xpath: (//div[contains(text(),'Your Business Profile')]/../../..//div[@class='ant-select-selector'])[1]
+type_business_selection:
+  id: businessCategory
+role_of_business_selection:
+  id: businessRole
+new_account_link:
+  xpath: //a[contains(@href,'/teams/create')]
+create_business_btn:
+  xpath: //button[.='Submit']
+close_btn:
+  xpath: //button[.='Close']
+confirm_btn:
+  xpath: (//button[.='Confirm'])[1]
+confirm_btn2:
+  xpath: (//button[.='Confirm'])[2]
+confirm_password_field:
+  id: confirmPassword
+business_role_option:
+  xpath: //input[@value="<option_text>"]
+business_role_checked:
+  xpath: //input[@value="<option_text>"]/../../span[contains(@class, 'checked')]
+business_role_text:
+  xpath: (//span[.='<title>'])[1]
+support_email:
+  id: supportEmail
+daily_volume_selection:
+  id: dailyVolume
+daily_customer_selection:
+  id: dailyCustomer
+monthly_payout_selection:
+  id: monthlyPayout
+
+no_data_icon:
+  xpath: //p[.='No Data']
+common_pagination_number:
+  css selector: .common-pagination-number
+disabled_next_btn:
+  xpath: //button[.='Next' and @disabled]
+disabled_previous_btn:
+  xpath: //button[.='Previous' and @disabled]
+previous_btn:
+  xpath: //button[.='Previous']
+
+filter_zero:
+  xpath: //span[@class='filter-Count' and contains(text(),'0')]
+filter_not_zero:
+  xpath: //span[@class='filter-Count' and not(contains(text(),'0'))]
+search_no_content:
+  xpath: //span[contains(@class, 'search-input')]//input[@value = '']
+search_with_content:
+  xpath: //span[contains(@class, 'search-input')]//input[@value = '<search_content>']
+
+table_thead_filed_td:
+  xpath: //table/thead/tr/th
+table_toby_filed_td:
+  xpath: //tbody/tr/td[<td_index>]
+table_toby_tr:
+  xpath: //tbody/tr
+details_filed:
+  xpath: //span[.="<filed_type>"]//following-sibling::*[1]
+
+drop_down_option_id:
+  css selector: '#<list_id>'
+
+go_to_verify:
+  xpath: //button[.='Go to Verify']
+tell_me_about_you:
+  xpath: //h3[.='Tell us about you']
+tell_us_about_your_business:
+  xpath: //h3[text()='Tell us about your business']
+h3_title:
+  xpath: //h3[.='<title>']
+go_to_information_btn:
+  xpath: //button[.='<title>']
+
+empty_description:
+  css selector: .ant-empty-description
+
+account_list:
+  xpath: //ul[@class='ant-menu-item-group-list']/li
+current_shop:
+  xpath: //span[text()='<shop_name>']
+
+reward_level_text:
+  xpath: //div[text()='Overview']//following-sibling::*/div/div
+
+first_payout_row:
+  css selector: .ant-table-tbody tr:nth-child(2) td:nth-child(2)

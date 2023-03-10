@@ -1,0 +1,26 @@
+[INFO]-[2023-03-09 18:18:42]-[PCO-1058_Staging_Web_Chrome]: ====== WebDriver manager ======
+[INFO]-[2023-03-09 18:18:43]-[PCO-1058_Staging_Web_Chrome]: Get LATEST chromedriver version for google-chrome 111.0.5563
+[INFO]-[2023-03-09 18:18:44]-[PCO-1058_Staging_Web_Chrome]: Driver [/Users/lexuan.pengcrypto.com/.wdm/drivers/chromedriver/mac64/111.0.5563/chromedriver] found in cache
+[INFO]-[2023-03-09 18:18:51]-[PCO-1058_Staging_Web_Chrome]: 【Wait login_field by action wait_first with timeout 3】 - PASSED -> Find by < id: email >
+[INFO]-[2023-03-09 18:18:51]-[PCO-1058_Staging_Web_Chrome]: 【Verify object password_field if see 】:  Find by -> < id: password > - PASSED
+[INFO]-[2023-03-09 18:18:51]-[PCO-1058_Staging_Web_Chrome]: 【Verify object sign_in_btn if see 】:  Find by -> < xpath: //button[@type='submit'] > - PASSED
+[INFO]-[2023-03-09 18:18:51]-[PCO-1058_Staging_Web_Chrome]: 【I go to <global_host>/users/sign_in page】- Passed
+[INFO]-[2023-03-09 18:18:54]-[PCO-1058_Staging_Web_Chrome]: 【Wait geetest_btn by action wait_first with timeout 3】 - PASSED -> Find by < css selector: div.geetest_btn >
+[DEBUG]-[2023-03-09 18:18:54]-[PCO-1058_Staging_Web_Chrome]: 【Click on geetest_btn】-> Find by < css selector: div.geetest_btn >
+[DEBUG]-[2023-03-09 18:18:55]-[PCO-1058_Staging_Web_Chrome]: 【Input on login_field with text lexuan.peng+1@crypto.com】-> Find by < id: email >
+[DEBUG]-[2023-03-09 18:18:55]-[PCO-1058_Staging_Web_Chrome]: 【Input on password_field with text vtc@NER7fct.emn1bqr】-> Find by < id: password >
+[INFO]-[2023-03-09 18:18:56]-[PCO-1058_Staging_Web_Chrome]: 【Wait sign_in_btn by action wait_first with timeout 1】 - PASSED -> Find by < xpath: //button[@type='submit'] >
+[DEBUG]-[2023-03-09 18:18:56]-[PCO-1058_Staging_Web_Chrome]: 【Click on sign_in_btn】-> Find by < xpath: //button[@type='submit'] >
+[INFO]-[2023-03-09 18:18:56]-[PCO-1058_Staging_Web_Chrome]: 【Login by user and password】: <user_name> - <password>
+[INFO]-[2023-03-09 18:18:59]-[PCO-1058_Staging_Web_Chrome]: 【I login with correct <user_name> and <password>】- Passed
+[DEBUG]-[2023-03-09 18:18:59]-[PCO-1058_Staging_Web_Chrome]: 【Find login_field by first locator FAILED】: no such element: Unable to locate element: {"method":"css selector","selector":"[id="email"]"}
+  (Session info: headless chrome=111.0.5563.64)
+[INFO]-[2023-03-09 18:18:59]-[PCO-1058_Staging_Web_Chrome]: 【Verify object login_field if notsee 】:  Find by -> < id: email > - PASSED
+[DEBUG]-[2023-03-09 18:18:59]-[PCO-1058_Staging_Web_Chrome]: 【Find password_field by first locator FAILED】: no such element: Unable to locate element: {"method":"css selector","selector":"[id="password"]"}
+  (Session info: headless chrome=111.0.5563.64)
+[INFO]-[2023-03-09 18:18:59]-[PCO-1058_Staging_Web_Chrome]: 【Verify object password_field if notsee 】:  Find by -> < id: password > - PASSED
+[DEBUG]-[2023-03-09 18:19:00]-[PCO-1058_Staging_Web_Chrome]: 【Find main_title by first locator FAILED】: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='ant-card-head-title']//div[.='Overview']"}
+  (Session info: headless chrome=111.0.5563.64)
+[DEBUG]-[2023-03-09 18:19:00]-[PCO-1058_Staging_Web_Chrome]: 【Get text on main_title with Overview】-> Find by < xpath: //*[@class='ant-card-head-title' and contains(text(),'Overview')] >
+[INFO]-[2023-03-09 18:19:00]-[PCO-1058_Staging_Web_Chrome]: 【Verify object main_title text if equals to】 Actual is: Overview, Expected is: Overview, Find by -> < xpath: //*[@class='ant-card-head-title' and contains(text(),'Overview')] > - PASSED
+[INFO]-[2023-03-09 18:19:00]-[PCO-1058_Staging_Web_Chrome]: 【I should login successful】- Passed

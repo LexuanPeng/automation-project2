@@ -1,0 +1,27 @@
+from enum import Enum
+
+
+class ProductSystemNameEnum(Enum):
+    VALUATION_NODE = "VALUATION_NODE"
+
+
+# --- VALUATION_NODE ----
+class ValuationNodeMethodEnum(Enum):
+    setValuationOverride = "setValuationOverride"
+    getValuationResult = "getValuationResult"
+
+
+class ValuationNodeFieldEnum(Enum):
+    MARK_PRICE = "MARK_PRICE"
+    FAIR_PRICE = "FAIR_PRICE"
+    FUNDING_RATE = "FUNDING_RATE"
+    INDEX_PRICE = "INDEX_PRICE"
+
+
+class ValuationNodeProfileEnum(Enum):
+    LIVE_EXCHANGE_OFFICIAL = "LIVE_EXCHANGE_OFFICIAL"
+    LIVE_RISK_OFFICIAL = "LIVE_RISK_OFFICIAL"
+    LIVE_TRADING_OFFICIAL = "LIVE_TRADING_OFFICIAL"
+    HOURLY_RISK_SMART_MARGIN = "HOURLY_RISK_SMART_MARGIN"
+    RESERVED_FOR_RISK_PORTFOLIO_MARGIN = "RESERVED_FOR_RISK_PORTFOLIO_MARGIN"
+    RESERVED_FOR_RISK_PORTFOLIO_MARGIN_2 = "RESERVED_FOR_RISK_PORTFOLIO_MARGIN_2"

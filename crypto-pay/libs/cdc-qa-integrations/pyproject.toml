@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "cdc-qa-integrations"
+version = "0.0.1"
+description = "A collection of classes used in integrating third-party tools for Crypto QA automation projects."
+authors = ["Lucas Lee <lucas.lee@crypto.com>"]
+packages = [
+    { include = "cdc", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cdc-qa-core = {path = "../cdc-qa-core", develop = true}
+qaseio = "3.1.1"
+pyotp = "^2.6.0"
+twilio = "^7.12.0"
+google-api-python-client = "^2.19.1"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.4.6"
+retry = "^0.9.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^3.8.4"
+ipykernel = "^6.15.0"
+pytest = "^6.2.5"
+pytest-mock = "^3.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120

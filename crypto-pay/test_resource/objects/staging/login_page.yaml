@@ -1,0 +1,9 @@
+login_field:
+  id: email
+password_field:
+  id: password
+
+geetest_btn:
+  css selector: div.geetest_btn
+sign_in_btn:
+  xpath: //button[@type='submit']

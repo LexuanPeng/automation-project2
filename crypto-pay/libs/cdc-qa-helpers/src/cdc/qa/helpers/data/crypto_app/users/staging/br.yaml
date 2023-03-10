@@ -1,0 +1,10 @@
+profile_1:
+    name: "Auto QA"
+    dob: "1999-12-31"
+    document_type: "ID_CARD"
+    register_phone_number: "+16416705414"
+    phone_number: "+559550699277"
+    payment_currency: "BRL"
+    country_alpha_2: "BR"
+    country_alpha_3: "BRA"
+    entity_id: "brazil"

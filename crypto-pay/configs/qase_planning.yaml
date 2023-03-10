@@ -1,0 +1,27 @@
+common: &project_code
+  project_code: PCO
+
+nft:
+  <<: *project_code
+  test_plan_id: 13
+payment:
+  <<: *project_code
+  test_plan_id: 10
+payout:
+  <<: *project_code
+  test_plan_id: 11
+smoke:
+  <<: *project_code
+  test_plan_id: 7
+smoke2:
+  <<: *project_code
+  test_plan_id: 9
+daily:
+  <<: *project_code
+  test_plan_id: 14
+pay-core:
+  <<: *project_code
+  test_plan_id: 17
+pay-core2:
+  <<: *project_code
+  test_plan_id: 18

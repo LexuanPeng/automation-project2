@@ -1,0 +1,7 @@
+default: &user_details
+  user_name: lexuan.peng+1@crypto.com
+  password: vtc@NER7fct.emn1bqr
+
+
+PCO-1058:
+  <<: *user_details

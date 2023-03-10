@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "cdc-qa-helpers"
+version = "0.0.1"
+description = "A collection of helper classes for Crypto QA automation projects."
+authors = ["Lucas Lee <lucas.lee@crypto.com>"]
+packages = [
+    { include = "cdc", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+gql = {version = "3.0.0a5", allow-prereleases = true}
+paramiko = "^2.7.2"
+cdc-qa-core = {path = "../cdc-qa-core", develop = true}
+cdc-qa-integrations = {path = "../cdc-qa-integrations", develop = true}
+cdc-qa-apis = {path = "../cdc-qa-apis", develop = true}
+PyYAML = "^5.4.1"
+sshtunnel = "^0.4.0"
+SQLAlchemy = "^1.4.26"
+PyMySQL = "^1.0.2"
+psycopg2-binary = "^2.9.2"
+pexpect = "^4.8.0"
+kubernetes = "^25.3.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^3.8.4"
+ipykernel = "^6.3.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120

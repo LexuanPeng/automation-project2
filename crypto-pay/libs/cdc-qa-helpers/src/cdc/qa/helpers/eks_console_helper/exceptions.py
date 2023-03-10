@@ -1,0 +1,2 @@
+class EKSRailsConsoleException(Exception):
+    pass

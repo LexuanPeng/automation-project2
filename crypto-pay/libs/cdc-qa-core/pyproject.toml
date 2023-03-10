@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cdc-qa-core"
+version = "0.0.1"
+description = "Essential classes for Crypto QA automation projects."
+authors = ["Lucas Lee <lucas.lee@crypto.com>"]
+packages = [
+    { include = "cdc", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Appium-Python-Client = "^1.0.2"
+webdriver-manager = "^3.3.0"
+aws-secretsmanager-caching = "^1.1.1"
+boto3 = "^1.18.24"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+flake8 = "^3.8.4"
+ipykernel = "^5.3.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120

@@ -1,0 +1,9 @@
+profile_1:
+    name: "Auto QA"
+    dob: "1999-12-31"
+    document_type: "ID_CARD"
+    phone_number: "+541122334455"
+    payment_currency: "ARS"
+    country_alpha_2: "AR"
+    country_alpha_3: "ARG"
+    entity_id: "argentina"

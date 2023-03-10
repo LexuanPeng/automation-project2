@@ -1,0 +1,8 @@
+profile_1:
+    name: "Auto QA"
+    dob: "1999-12-31"
+    document_type: "ID_CARD"
+    phone_number: "+447782807463"
+    payment_currency: "GBP"
+    country_alpha_2: "GB"
+    country_alpha_3: "GBR"

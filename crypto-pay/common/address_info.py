@@ -1,0 +1,30 @@
+class Erc20ContractAddress:
+    USDC = "0x80ba8d0ca384fc3ca4fb8c6cbb5769276ac70a04"
+    CRO = "0x4edC40eF81Cd773b690f01Ea75B9AC90A87fda6e"
+    # TUSD = "0x46c1ebb6bec882e92e52982a33eaf44db3bfde26"
+    USDT = "0x2b636117A94f858bf921de3a7226f7fa05066e89"
+
+
+class CronosContractAddress:
+    USDC = "0x71A26A5090fe4FeD65a8cdb11D761E6D07Ad7d36"
+    WETH = "0x796135E94527c38433e9c42f4Cd91ca931E5e6A6"
+    VVS = "0x904Bd5a5AAC0B9d88A0D47864724218986Ad4a3a"
+    MUFFIN = "0xeCEd065C7AeAA2daff3199ead1544511b2612022"
+    USDT = "0x2AA588de227D0B5EF5775dB992ff7f2Fe82cf067"
+    # TUSD = "0x41315e63d0663ce839931fed7451084613e385b3"
+
+
+class GoerliContractAddress:
+    USDC = "0x39e92ba4b151ee0a3756897a5303c1ed14dcbde0"
+    USDT = "0xaa34a2ee8be136f0eed223c9ec8d4f2d0bc472dd"
+    CRO = "0x1173069b0e472a64ce2b6203fec8fb25a05b75c2"
+    # TUSD = "0xA7da9D26A8Aa2155429c440ea05236eCE7F0ffF0"
+    # TCAD = "0x4561881d9298a2adfe7969e4841921c885609fa5"
+    # TAUD = "0x05f3aa2cf3bead345fb62ae9e0d0587d198faaad"
+    # TGBP = "0xb2ee46e988c4b537b78b0cd3e7b60a29019c1706"
+
+
+class RefundAddress:
+    erc_address = "0x535619cf2bd2e84e567bda1a6164f195cb2bba21"
+    cronos_address = "0x926b392108c7f8f10588Ef937EAd7A9d7C1c01CD"
+    polygon_address = "0x42b10011536c6e32d96576c8c33Ae9b4Eaf30234"
